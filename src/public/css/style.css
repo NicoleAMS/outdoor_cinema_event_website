@@ -1,3 +1,13 @@
+.jumbotron {
+  background-image: url("../../public/img/outdoor-cinema.jpg");
+  background-size: cover; }
+
+.jumbotron-overlay {
+  background-color: rgba(49, 41, 53, 0.5); }
+
+.jumbotron-text-container {
+  margin: auto 0; }
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -300,8 +310,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1.2;
-  color: blue; }
+  line-height: 1.2; }
 
 h1, .h1 {
   font-size: 2.5rem; }
@@ -4372,7 +4381,6 @@ a.close.disabled {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  color: blue;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-top-left-radius: calc(0.3rem - 1px);
