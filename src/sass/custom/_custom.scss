@@ -1,3 +1,35 @@
+// GENERAL
+body {
+    background-color: $secondary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.line {
+    height: 100%;
+    width: 100px;
+    border-top: 2px solid $primary;
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    bottom: 5px;
+}
+
+.line-center {
+    display: block;
+    margin: 15px auto 25px;
+    position: inherit;
+}
+
+// JUMBOTRON
 .jumbotron {
     background-image: url("../../public/img/outdoor-cinema.jpg");
     background-size: cover;
@@ -8,5 +40,74 @@
 }
 
 .jumbotron-text-container {
-    margin: auto 0; 
+    max-width: 800px;
+    h1 {
+        font-size: 72px;
+        margin-bottom: 50px;
+    }
+    p.jumbotron-subtitle {
+        font-size: 25px;
+    }
+}
+
+.jumbotron-text-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    position: relative;
+    top: 120px;
+    p, button {
+        margin: 25px 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 25px;
+        border: 1px solid $white;
+    }
+    button {
+        padding: 25px 45px;
+        border: none;
+        margin-left: 10px;
+    }
+}
+
+// NAVBAR
+.navbar {
+    padding: 0;
+    a.navbar-brand {
+        padding: 0;
+    }
+    a.nav-link {
+        color: $white;
+        &:hover {
+            color: $primary;
+        } 
+    }
+}
+
+// ABOUT SECTION
+.about-section {
+    height: 500px;
+    background-color: $light;
+    color: $dark;
+    align-items: center;
+}
+
+.movies-section {
+    .movies-heading {
+        color: $white;
+        margin: 120px 0 50px;
+    }
+}
+
+.card {
+    .row {
+        padding: 80px 0;
+        margin: 0px auto;
+        max-width: 840px;
+    }
+}
+
+.movie-poster {
+    height: 350px;
 }
