@@ -4,19 +4,13 @@ const sass = require('gulp-sass');
 
 // compile scss into css
 function style() {
-    // find scss file
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', './src/sass/*.scss', './src/sass/custom/*.scss'])
+    // find scss file (custom file necessary to include changes made here during every browser reload)
+    return gulp.src(['./src/sass/*.scss', './src/sass/custom/*.scss'])
     // pass file through scss compiler
     .pipe(sass().on('error', sass.logError))
     // save compiled css
     .pipe(gulp.dest('./src/public/css/'))
     // stream changes to all browsers
-    .pipe(browserSync.stream());
-}
-
-function javascript() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/popper.min.js'])
-    .pipe(gulp.dest('./src/js'))
     .pipe(browserSync.stream());
 }
 
@@ -27,11 +21,9 @@ function watch() {
         }
     });
 
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', './src/sass/*.scss', './src/sass/custom/*.scss'], style);
+    gulp.watch(['./src/sass/*.scss', './src/sass/custom/*.scss'], style);
     gulp.watch('./src/*.html').on('change', browserSync.reload);
-    gulp.watch(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/popper.min.js'], javascript);
 }
 
 exports.style = style;
-exports.javascript = javascript;
 exports.watch = watch;
