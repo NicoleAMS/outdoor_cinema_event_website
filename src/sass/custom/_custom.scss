@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
     position: inherit;
 }
 
+.w-30 {
+    width: 30%;
+}
+
 // JUMBOTRON
 .jumbotron {
     background-image: url("../../public/img/outdoor-cinema.jpg");
@@ -93,11 +97,9 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.movies-section {
-    .movies-heading {
-        color: $white;
-        margin: 120px 0 50px;
-    }
+.section-heading {
+    color: $white;
+    margin: 120px 0 50px;
 }
 
 .card {
@@ -110,4 +112,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .movie-poster {
     height: 350px;
+}
+
+.latest-news-section {
+    padding-bottom: 150px;
+}
+
+.location-section {
+    .location-row {
+        min-height: 850px;
+    }
+    .location-text-container {
+        margin-top: 150px;
+    }
+    .bpg-img {
+        background-image: url("../../public/img/boston_public_garden.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .line {
+        right: -50px;
+    }
+    .google-maps {
+        width: 500px;
+    }
 }
