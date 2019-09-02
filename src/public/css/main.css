@@ -7053,6 +7053,9 @@ h1, h2, h3, h4, h5, h6 {
 .w-30 {
   width: 30%; }
 
+.height-fit-content {
+  height: fit-content; }
+
 .jumbotron {
   background-image: url("../../public/img/outdoor-cinema.jpg");
   background-size: cover; }
@@ -7114,22 +7117,26 @@ h1, h2, h3, h4, h5, h6 {
   height: 350px; }
 
 .latest-news-section {
-  padding-bottom: 150px; }
+  padding-bottom: 265px !important; }
 
-.location-section .location-row {
-  min-height: 850px; }
+.location-section {
+  top: -230px; }
+  .location-section .location-row {
+    min-height: 950px; }
+  .location-section .location-text-container {
+    margin-top: 200px; }
+  .location-section .bpg-img {
+    background-image: url("../../public/img/boston_public_garden.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right; }
+  .location-section .line {
+    right: -50px; }
+  .location-section .google-maps {
+    width: 500px; }
 
-.location-section .location-text-container {
-  margin-top: 150px; }
-
-.location-section .bpg-img {
-  background-image: url("../../public/img/boston_public_garden.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right; }
-
-.location-section .line {
-  right: -50px; }
-
-.location-section .google-maps {
-  width: 500px; }
+.numbers-container {
+  max-width: 960px;
+  height: 230px;
+  z-index: 1000;
+  top: -115px; }

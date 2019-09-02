@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 30%;
 }
 
+.height-fit-content {
+    height: fit-content;
+}
+
 // JUMBOTRON
 .jumbotron {
     background-image: url("../../public/img/outdoor-cinema.jpg");
@@ -115,15 +119,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .latest-news-section {
-    padding-bottom: 150px;
+    padding-bottom: 265px !important;
 }
 
 .location-section {
+    top: -230px;
     .location-row {
-        min-height: 850px;
+        min-height: 950px;
     }
     .location-text-container {
-        margin-top: 150px;
+        margin-top: 200px;
     }
     .bpg-img {
         background-image: url("../../public/img/boston_public_garden.jpg");
@@ -137,4 +142,11 @@ h1, h2, h3, h4, h5, h6 {
     .google-maps {
         width: 500px;
     }
+}
+
+.numbers-container {
+    max-width: 960px;
+    height: 230px;
+    z-index: 1000;
+    top: -115px;
 }
