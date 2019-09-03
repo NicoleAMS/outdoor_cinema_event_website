@@ -1,6 +1,13 @@
 // GENERAL
 body {
-    background-color: $secondary;
+    background-image: url("../../public/img/night-sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-overlay {
+    background-color: scale-color($secondary, $alpha: -20%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -119,7 +126,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .latest-news-section {
-    padding-bottom: 265px !important;
+    background: url("../../public/img/film_strip.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .latest-news-overlay {
+        background-color: scale-color($dark, $alpha: -10%);
+        padding-bottom: 265px !important;
+    }
 }
 
 .location-section {
@@ -149,4 +162,18 @@ h1, h2, h3, h4, h5, h6 {
     height: 230px;
     z-index: 1000;
     top: -115px;
+}
+
+.registration-section {
+    position: relative;
+    top: -100px;
+    .form-underlay {
+        height: calc(100% - 48px);
+        width: calc(100% - 30px);
+        background-color: white;
+        position: absolute;
+        z-index: -5;
+        bottom: -10px;
+        right: -20px;
+    }
 }

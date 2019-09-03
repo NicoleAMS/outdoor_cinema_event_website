@@ -10,266 +10,324 @@
         <link rel="stylesheet" href="./public/css/main.css">
     </head>
     <body>
-        <section class="jumbotron p-0 vh-100 my-0">
-            <div class="jumbotron-overlay d-flex vh-100 w-100 text-white">
-                <div class="container fixed-top">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="#">
-                            <img src="./public/img/logo.png" alt="WIO logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="mainNav">
-                            <div class="mr-auto"></div>
-                            <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">What's On</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Latest News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Location</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Register</a>
-                            </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-
-                <div class="jumbotron-text-container mx-auto my-auto text-center">
-                    <h1>Celebrating our 2nd festival</h1>
-                    <p class="jumbotron-subtitle"><span class="line"></span>Watch It Outside Boston Edition</p>
-                    <div class="jumbotron-text-info">
-                        <p>August 5 - 8 2020</p>
-                        <p>Boston Public Garden</p>
-                        <button class="btn btn-primary">Register</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-section container-fluid d-flex">
-            <div class="about-text-container text-center w-50 mx-auto">
-                <h2>About the festival <span class="line line-center"></span></h2>
-                <p>I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services. I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services.</p>
-                <p></p>
-                <p>I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services.</p>
-                <button class="btn btn-primary">Learn More</button>
-            </div>
-        </section>
-
-        <section class="movies-section container pb-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="section-title section-heading">What's On</h2>
-                </div>
-                <div class="col-md-6">
-                    <p class="section-subtitle section-heading"><span class="line"></span>Our Movies</p>
-                </div>
-            </div>
-            <div class="movies-list accordion" id="moviesAccordion">
-
-                <div class="card">
-                    <div class="card-header bg-light" id="thursdayHeader">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#thursdayList" aria-expanded="true" aria-controls="thursdayList">
-                                01) Thursday >
+        <div class="body-overlay">
+            <section class="jumbotron p-0 vh-100 my-0">
+                <div class="jumbotron-overlay d-flex vh-100 w-100 text-white">
+                    <div class="container fixed-top">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="./public/img/logo.png" alt="WIO logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
                             </button>
-                        </h2>
+
+                            <div class="collapse navbar-collapse" id="mainNav">
+                                <div class="mr-auto"></div>
+                                <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">What's On</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Latest News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Location</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Preregister</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
 
-                    <div class="collapse show" id="thursdayList" aria-labelledby="thursdayHeader" data-parent="#moviesAccordion">
-                        <div class="card-body">
-                            <div class="row border-bottom border-light">
-                                <div class="col-md-5 text-center">
-                                    <img src="./public/img/frozen-poster.jpg" alt="" class="movie-poster">
-                                </div>
-                                <div class="col-md-7 d-flex flex-column justify-content-center">
-                                    <h3 class="mb-5">Frozen</h3>
-                                    <p class="mb-5">When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.</p>
-                                    <p class="text-uppercase text-primary font-weight-bold mb-0">Thursday 5th of August 6PM </p>
-                                    <p class="text-uppercase font-weight-bold">Screen 1</p>
-                                </div>
-                            </div>
-                            <div class="row border-bottom border-light">
-                                <div class="col-md-7 d-flex flex-column justify-content-center">
-                                    <h3 class="mb-5">Jurassic Park</h3>
-                                    <p class="mb-5">During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.</p>
-                                    <p class="text-uppercase text-primary font-weight-bold mb-0">Thursday 5th of August 7PM </p>
-                                    <p class="text-uppercase font-weight-bold">Screen 2</p>
-                                </div>
-                                <div class="col-md-5 text-center">
-                                    <img src="./public/img/jurassic-park-poster.jpg" alt="" class="movie-poster">
-                                </div>
-                            </div>
+                    <div class="jumbotron-text-container mx-auto my-auto text-center">
+                        <h1>Celebrating our 2nd festival</h1>
+                        <p class="jumbotron-subtitle"><span class="line"></span>Watch It Outside Boston Edition</p>
+                        <div class="jumbotron-text-info">
+                            <p>August 5 - 8 2020</p>
+                            <p>Boston Public Garden</p>
+                            <button class="btn btn-primary">Preregister</button>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="card">
-                    <div class="card-header" id="fridayHeader">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#fridayList" aria-expanded="true" aria-controls="fridayList">
-                                02) Friday >
-                            </button>
-                        </h2>
-                    </div>
-
-                    <div class="collapse" id="fridayList" aria-labelledby="fridayHeader" data-parent="#moviesAccordion">
-                        <div class="card-body">
-                            <div class="row border-bottom border-light">
-                                <div class="col-md-5 text-center">
-                                    <img src="./public/img/lion-king-poster.jpg" alt="" class="movie-poster">
-                                </div>
-                                <div class="col-md-7 d-flex flex-column justify-content-center">
-                                    <h3 class="mb-5">The Lion King</h3>
-                                    <p class="mb-5">To survive and grow into a powerful adult lion, Simba must perfect his savage pounce and master fighting with all four paws. Scrap with hyenas, dash through an elephant grave-yard, defeat your evil uncle Scar and recapture the Pridelands.</p>
-                                    <p class="text-uppercase text-primary font-weight-bold mb-0">Friday 6th of August 6.30PM </p>
-                                    <p class="text-uppercase font-weight-bold">Screen 1</p>
-                                </div>
-                            </div>
-                            <div class="row border-bottom border-light">
-                                <div class="col-md-7 d-flex flex-column justify-content-center">
-                                    <h3 class="mb-5">Grease</h3>
-                                    <p class="mb-5">Good girl Sandy and greaser Danny fell in love over the summer. When they unexpectedly discover they're now in the same high school, will they be able to rekindle their romance?</p>
-                                    <p class="text-uppercase text-primary font-weight-bold mb-0">Friday 6th of August 7.15PM </p>
-                                    <p class="text-uppercase font-weight-bold">Screen 2</p>
-                                </div>
-                                <div class="col-md-5 text-center">
-                                    <img src="./public/img/grease-poster.jpg" alt="" class="movie-poster">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <section class="about-section container-fluid d-flex">
+                <div class="about-text-container text-center w-50 mx-auto">
+                    <h2>About the festival <span class="line line-center"></span></h2>
+                    <p>I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services. I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services.</p>
+                    <p></p>
+                    <p>I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services.</p>
+                    <button class="btn btn-primary">Learn More</button>
                 </div>
+            </section>
 
-            </div>
-        </section>
-
-        <section class="latest-news-section container-fluid bg-dark">
-            <div class="container">
+            <section class="movies-section container pb-5">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2 class="section-title section-heading">Latest News</h2>
+                        <h2 class="section-title section-heading">What's On</h2>
                     </div>
                     <div class="col-md-6">
-                        <p class="section-subtitle section-heading"><span class="line"></span>Featured News Articles</p>
+                        <p class="section-subtitle section-heading"><span class="line"></span>Our Movies</p>
                     </div>
                 </div>
+                <div class="movies-list accordion" id="moviesAccordion">
 
-                <div class="card-container row justify-content-center">
-                    <div class="card w-30 mr-4 mb-5">
-                        <img class="card-img-top" src="http://loremflickr.com/350/175/film,festival" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Film festival news</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
+                    <div class="card">
+                        <div class="card-header bg-light" id="thursdayHeader">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#thursdayList" aria-expanded="true" aria-controls="thursdayList">
+                                    01) Thursday >
+                                </button>
+                            </h2>
                         </div>
-                    </div>
-                    <div class="card w-30 mr-4 mb-5">
-                        <img class="card-img-top" src="http://loremflickr.com/350/175/boston,event" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Boston events</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card w-30 mr-4 mb-5">
-                        <img class="card-img-top" src="http://loremflickr.com/350/175/cinema" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Cinema news</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card w-30 mr-4 mb-4">
-                        <img class="card-img-top" src="http://loremflickr.com/350/175/outdoor,cinema" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Outdoor cinemas</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
-                            <a href="#" class="btn btn-primary">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card w-30 mr-4 mb-4">
-                        <img class="card-img-top" src="http://loremflickr.com/350/175/weather,boston,summer" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Weather information</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card w-30 mr-4 mb-4">
-                        <img class="card-img-top" src="http://loremflickr.com/350/175/film" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Other news</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <div class="numbers-section container numbers-container bg-white position-relative">
-            <div class="row align-items-center h-100">
-                <div class="col-md-3 height-fit-content text-center border-right">
-                    <p class="h3 display-3">04</p>
-                    <p class="h5 text-primary text-uppercase">days</p>
-                </div>
-                <div class="col-md-3 height-fit-content text-center border-right">
-                    <p class="h3 display-3">02</p>
-                    <p class="h5 text-primary text-uppercase">screens</p>
-                </div>
-                <div class="col-md-3 height-fit-content text-center border-right">
-                    <p class="h3 display-3">16</p>
-                    <p class="h5 text-primary text-uppercase">movies</p>
-                </div>
-                <div class="col-md-3 height-fit-content text-center">
-                    <button class="btn btn-primary">Register</button>
-                </div>
-            </div>
-        </div>
-
-        <section class="location-section position-relative">
-            <div class="container-fluid bg-light">
-                <div class="row location-row">
-                    <div class="col-md-6 px-0 bpg-img">
-                        <!-- <img src="./public/img/boston_public_garden.jpg" alt="Boston Public Garden" class="bpg-img"> -->
-                    </div>
-                    <div class="col-md-6 text-dark">
-                        <div class="location-text-container w-100 d-flex flex-column justify-content-center align-items-center">
-                            <div class="location-text text-center">
-                                <h2 class="mt-5 mb-3">Boston Public Garden</h2>
-                                <div class="row text-center">
-                                    <div class="col-md-4">
-                                        <p class="text-right"><span class="line"></span></p>
+                        <div class="collapse show" id="thursdayList" aria-labelledby="thursdayHeader" data-parent="#moviesAccordion">
+                            <div class="card-body">
+                                <div class="row border-bottom border-light">
+                                    <div class="col-md-5 text-center">
+                                        <img src="./public/img/frozen-poster.jpg" alt="" class="movie-poster">
                                     </div>
-                                    <div class="col-md-6">
-                                        <address class="text-uppercase">
-                                            4 Charles Street<br>
-                                            Boston, MA 02116
-                                        </address>
+                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                        <h3 class="mb-5">Frozen</h3>
+                                        <p class="mb-5">When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.</p>
+                                        <p class="text-uppercase text-primary font-weight-bold mb-0">Thursday 5th of August 6PM </p>
+                                        <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <img src="./public/img/bpg-google-maps-sat.png" alt="Google maps with location of screens" class="google-maps">
-                                <button class="mb-5 mt-3 btn btn-primary d-block">Visit Site</button>
+                                <div class="row border-bottom border-light">
+                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                        <h3 class="mb-5">Jurassic Park</h3>
+                                        <p class="mb-5">During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.</p>
+                                        <p class="text-uppercase text-primary font-weight-bold mb-0">Thursday 5th of August 7PM </p>
+                                        <p class="text-uppercase font-weight-bold">Screen 2</p>
+                                    </div>
+                                    <div class="col-md-5 text-center">
+                                        <img src="./public/img/jurassic-park-poster.jpg" alt="" class="movie-poster">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="fridayHeader">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#fridayList" aria-expanded="true" aria-controls="fridayList">
+                                    02) Friday >
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div class="collapse" id="fridayList" aria-labelledby="fridayHeader" data-parent="#moviesAccordion">
+                            <div class="card-body">
+                                <div class="row border-bottom border-light">
+                                    <div class="col-md-5 text-center">
+                                        <img src="./public/img/lion-king-poster.jpg" alt="" class="movie-poster">
+                                    </div>
+                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                        <h3 class="mb-5">The Lion King</h3>
+                                        <p class="mb-5">To survive and grow into a powerful adult lion, Simba must perfect his savage pounce and master fighting with all four paws. Scrap with hyenas, dash through an elephant grave-yard, defeat your evil uncle Scar and recapture the Pridelands.</p>
+                                        <p class="text-uppercase text-primary font-weight-bold mb-0">Friday 6th of August 6.30PM </p>
+                                        <p class="text-uppercase font-weight-bold">Screen 1</p>
+                                    </div>
+                                </div>
+                                <div class="row border-bottom border-light">
+                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                        <h3 class="mb-5">Grease</h3>
+                                        <p class="mb-5">Good girl Sandy and greaser Danny fell in love over the summer. When they unexpectedly discover they're now in the same high school, will they be able to rekindle their romance?</p>
+                                        <p class="text-uppercase text-primary font-weight-bold mb-0">Friday 6th of August 7.15PM </p>
+                                        <p class="text-uppercase font-weight-bold">Screen 2</p>
+                                    </div>
+                                    <div class="col-md-5 text-center">
+                                        <img src="./public/img/grease-poster.jpg" alt="" class="movie-poster">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="latest-news-section container-fluid">
+                <div class="latest-news-overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="section-title section-heading">Latest News</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="section-subtitle section-heading"><span class="line"></span>Featured News Articles</p>
+                            </div>
+                        </div>
+
+                        <div class="card-container row justify-content-center">
+                            <div class="card w-30 mr-4 mb-5">
+                                <img class="card-img-top" src="http://loremflickr.com/350/175/film,festival" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Film festival news</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card w-30 mr-4 mb-5">
+                                <img class="card-img-top" src="http://loremflickr.com/350/175/boston,event" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Boston events</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card w-30 mr-4 mb-5">
+                                <img class="card-img-top" src="http://loremflickr.com/350/175/cinema" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cinema news</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card w-30 mr-4 mb-4">
+                                <img class="card-img-top" src="http://loremflickr.com/350/175/outdoor,cinema" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Outdoor cinemas</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card w-30 mr-4 mb-4">
+                                <img class="card-img-top" src="http://loremflickr.com/350/175/weather,boston,summer" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weather information</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card w-30 mr-4 mb-4">
+                                <img class="card-img-top" src="http://loremflickr.com/350/175/film" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Other news</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <div class="numbers-section container numbers-container bg-white position-relative">
+                <div class="row align-items-center h-100">
+                    <div class="col-md-3 height-fit-content text-center border-right">
+                        <p class="h3 display-3">04</p>
+                        <p class="h5 text-primary text-uppercase">days</p>
+                    </div>
+                    <div class="col-md-3 height-fit-content text-center border-right">
+                        <p class="h3 display-3">02</p>
+                        <p class="h5 text-primary text-uppercase">screens</p>
+                    </div>
+                    <div class="col-md-3 height-fit-content text-center border-right">
+                        <p class="h3 display-3">16</p>
+                        <p class="h5 text-primary text-uppercase">movies</p>
+                    </div>
+                    <div class="col-md-3 height-fit-content text-center">
+                        <button class="btn btn-primary">Preregister</button>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <section class="location-section position-relative">
+                <div class="container-fluid bg-light">
+                    <div class="row location-row">
+                        <div class="col-md-6 px-0 bpg-img">
+                        </div>
+                        <div class="col-md-6 text-dark">
+                            <div class="location-text-container w-100 d-flex flex-column justify-content-center align-items-center">
+                                <div class="location-text text-center">
+                                    <h2 class="mt-5 mb-3">Boston Public Garden</h2>
+                                    <div class="row text-center">
+                                        <div class="col-md-4">
+                                            <p class="text-right"><span class="line"></span></p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <address class="text-uppercase">
+                                                4 Charles Street<br>
+                                                Boston, MA 02116
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <img src="./public/img/bpg-google-maps-sat.png" alt="Google maps with location of screens" class="google-maps">
+                                    <button class="mb-5 mt-3 btn btn-primary d-block">Visit Site</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="registration-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 text-white">
+                            <h2 class="text-uppercase mb-4"><span class="line ml-4 mb-1"></span>Preregister</h2>
+                            <p class="pr-0">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-11">
+                            <div class="form-underlay"></div>
+                            <form class=" my-4 bg-dark p-5 border-left-0 border-white">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6 mb-4">
+                                        <label for="name" class="text-light">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-4">
+                                        <label for="emailAddress" class="text-light">Email</label>
+                                        <input type="email" class="form-control" id="emailAddress" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-8 mb-4">
+                                        <label for="day" class="text-light">Day</label>
+                                        <select class="form-control" id="day">
+                                            <option>Thursday 5th of August</option>
+                                            <option>Friday 6th of August</option>
+                                            <option>Saturday 7th of August</option>
+                                            <option>Sunday 8th of August</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4 mb-4">
+                                        <label for="numTickets" class="text-light">Number of tickets</label>
+                                        <select class="form-control" id="numTickets">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="comment" class="text-light">Additional info</label>
+                                    <textarea class="form-control" id="comment" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-25">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         
         <script src="./js/jquery.min.js"></script>
         <script src="./js/popper.min.js"></script>
