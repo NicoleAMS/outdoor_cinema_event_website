@@ -7062,6 +7062,16 @@ h1, h2, h3, h4, h5, h6 {
 .height-fit-content {
   height: fit-content; }
 
+.anchor {
+  position: relative;
+  top: -100px; }
+
+.anchor#location {
+  top: 0px; }
+
+.anchor#preregister {
+  top: -230px; }
+
 .jumbotron {
   background-image: url("../../public/img/outdoor-cinema.jpg");
   background-size: cover; }
@@ -7096,12 +7106,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 10px; }
 
 .navbar {
-  padding: 0; }
+  padding: 0;
+  height: 100px; }
   .navbar a.navbar-brand {
     padding: 0; }
   .navbar a.nav-link {
     color: #fff; }
     .navbar a.nav-link:hover {
+      color: #FC5739; }
+    .navbar a.nav-link:active {
       color: #FC5739; }
 
 .about-section {
@@ -7109,6 +7122,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #E2E1DA;
   color: #1D1A23;
   align-items: center; }
+  .about-section .social-media-icons {
+    font-size: 32px; }
 
 .section-heading {
   color: #fff;
@@ -7144,7 +7159,8 @@ h1, h2, h3, h4, h5, h6 {
   .location-section .line {
     right: -50px; }
   .location-section .google-maps {
-    width: 500px; }
+    width: 100%;
+    max-width: 500px; }
 
 .numbers-container {
   max-width: 960px;
@@ -7163,3 +7179,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -5;
     bottom: -10px;
     right: -20px; }
+
+footer p {
+  margin-bottom: 0; }

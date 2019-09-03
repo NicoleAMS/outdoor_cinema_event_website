@@ -44,6 +44,19 @@ h1, h2, h3, h4, h5, h6 {
     height: fit-content;
 }
 
+.anchor {
+    position: relative;
+    top: -100px;
+}
+
+.anchor#location {
+    top: 0px;
+}
+
+.anchor#preregister {
+    top: -230px;
+}
+
 // JUMBOTRON
 .jumbotron {
     background-image: url("../../public/img/outdoor-cinema.jpg");
@@ -89,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 // NAVBAR
 .navbar {
     padding: 0;
+    height: 100px;
     a.navbar-brand {
         padding: 0;
     }
@@ -97,6 +111,9 @@ h1, h2, h3, h4, h5, h6 {
         &:hover {
             color: $primary;
         } 
+        &:active {
+            color: $primary;
+        }
     }
 }
 
@@ -106,6 +123,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $light;
     color: $dark;
     align-items: center;
+    .social-media-icons {
+        font-size: 32px;
+    }
 }
 
 .section-heading {
@@ -153,7 +173,8 @@ h1, h2, h3, h4, h5, h6 {
         right: -50px;
     }
     .google-maps {
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
     }
 }
 
@@ -175,5 +196,11 @@ h1, h2, h3, h4, h5, h6 {
         z-index: -5;
         bottom: -10px;
         right: -20px;
+    }
+}
+
+footer  {
+    p {
+        margin-bottom: 0;
     }
 }

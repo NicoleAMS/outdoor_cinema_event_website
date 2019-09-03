@@ -6,16 +6,17 @@
         <title>Watch It Outside Boston Edition</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700|Comfortaa:700|Spinnaker">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,400,700|Comfortaa:700|Spinnaker">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./public/css/main.css">
     </head>
     <body>
         <div class="body-overlay">
-            <section class="jumbotron p-0 vh-100 my-0">
+            <section class="jumbotron p-0 vh-100 my-0" id="home">
                 <div class="jumbotron-overlay d-flex vh-100 w-100 text-white">
-                    <div class="container fixed-top">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="#">
+                    <div class="container-fluid fixed-top px-0">
+                        <nav class="navbar navbar-expand-lg bg-dark">
+                            <a class="navbar-brand ml-5" href="#home">
                                 <img src="./public/img/logo.png" alt="WIO logo">
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,25 +25,25 @@
 
                             <div class="collapse navbar-collapse" id="mainNav">
                                 <div class="mr-auto"></div>
-                                <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">What's On</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Latest News</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Location</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Preregister</a>
-                                </li>
+                                <ul class="navbar-nav mr-5">
+                                    <li class="nav-item active">
+                                        <a class="nav-link anchor-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link anchor-link" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link anchor-link" href="#whats-on">What's On</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link anchor-link" href="#news">Latest News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link anchor-link" href="#location">Location</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link anchor-link" href="#preregister">Preregister</a>
+                                    </li>
                                 </ul>
                             </div>
                         </nav>
@@ -54,11 +55,13 @@
                         <div class="jumbotron-text-info">
                             <p>August 5 - 8 2020</p>
                             <p>Boston Public Garden</p>
-                            <button class="btn btn-primary">Preregister</button>
+                            <button class="btn btn-primary"><a href="#preregister" class="text-white anchor-link">Preregister</a></button>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <div id="about" class="anchor"></div> 
 
             <section class="about-section container-fluid d-flex">
                 <div class="about-text-container text-center w-50 mx-auto">
@@ -66,9 +69,15 @@
                     <p>I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services. I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services.</p>
                     <p></p>
                     <p>I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services.</p>
-                    <button class="btn btn-primary">Learn More</button>
+                    <div class="social-media-icons text-primary">
+                        <a href="www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </section>
+
+            <div id="whats-on" class="anchor"></div>
 
             <section class="movies-section container pb-5">
                 <div class="row">
@@ -125,7 +134,7 @@
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
+                                <div class="row">
                                     <div class="col-md-7 d-flex flex-column justify-content-center">
                                         <h3 class="mb-5">The Talented Mr. Ripley</h3>
                                         <p class="mb-5">In late 1950s New York, Tom Ripley, a young underachiever, is sent to Italy to retrieve Dickie Greenleaf, a rich and spoiled millionaire playboy. But when the errand fails, Ripley takes extreme measures.</p>
@@ -184,7 +193,7 @@
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
+                                <div class="row">
                                     <div class="col-md-7 d-flex flex-column justify-content-center">
                                         <h3 class="mb-5">Casablanca</h3>
                                         <p class="mb-5">A cynical American expatriate struggles to decide whether or not he should help his former lover and her fugitive husband escape French Morocco.</p>
@@ -243,7 +252,7 @@
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
+                                <div class="row">
                                     <div class="col-md-7 d-flex flex-column justify-content-center">
                                         <h3 class="mb-5">Cinema Paradiso</h3>
                                         <p class="mb-5">A filmmaker recalls his childhood when falling in love with the pictures at the cinema of his home village and forms a deep friendship with the cinema's projectionist.</p>
@@ -302,7 +311,7 @@
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
+                                <div class="row">
                                     <div class="col-md-7 d-flex flex-column justify-content-center">
                                         <h3 class="mb-5">Intouchables</h3>
                                         <p class="mb-5">After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.</p>
@@ -320,6 +329,8 @@
                 </div>
             </section>
 
+            <div id="news" class="anchor"></div> 
+
             <section class="latest-news-section container-fluid">
                 <div class="latest-news-overlay">
                     <div class="container">
@@ -328,7 +339,7 @@
                                 <h2 class="section-title section-heading">Latest News</h2>
                             </div>
                             <div class="col-md-6">
-                                <p class="section-subtitle section-heading"><span class="line"></span>Featured News Articles</p>
+                                <p class="section-subtitle section-heading"><span class="line"></span>Festival News & Announcements</p>
                             </div>
                         </div>
 
@@ -338,7 +349,27 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Film festival news</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Read more</a>
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newsModal1">Read more</a>
+
+                                    <div class="modal fade" id="newsModal1" tabindex="-1" role="dialog" aria-labelledby="newsModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="newsModalLabel">Film Festival News</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments thoroughly unsatiable terminated sex how themselves. She are ten hours wrong walls stand early. Domestic perceive on an ladyship extended received do. Why jennings our whatever his learning gay perceive. Is against no he without subject. Bed connection unreserved preference partiality not unaffected. Years merit trees so think in hoped we as. </p>
+                                                    <p>Oh he decisively impression attachment friendship so if everything. Whose her enjoy chief new young. Felicity if ye required likewise so doubtful. On so attention necessary at by provision otherwise existence direction. Unpleasing up announcing unpleasant themselves oh do on. Way advantage age led listening belonging supposing.</p>
+                                                    <img class="float-left pr-3" src="http://loremflickr.com/350/175/film,festival" alt="">
+                                                    <p>He an thing rapid these after going drawn or. Timed she his law the spoil round defer. In surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing. He as spoke avoid given downs money on we. Of properly carriage shutters ye as wandered up repeated moreover. Inquietude attachment if ye an solicitude to. Remaining so continued concealed as knowledge happiness. Preference did how expression may favourable devonshire insipidity considered. An length design regret an hardly barton mr figure. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="card w-30 mr-4 mb-5">
@@ -386,6 +417,8 @@
                 </div>
             </section>
 
+            <div id="location" class="anchor"></div> 
+
             <div class="numbers-section container numbers-container bg-white position-relative">
                 <div class="row align-items-center h-100">
                     <div class="col-md-3 height-fit-content text-center border-right">
@@ -401,7 +434,7 @@
                         <p class="h5 text-primary text-uppercase">movies</p>
                     </div>
                     <div class="col-md-3 height-fit-content text-center">
-                        <button class="btn btn-primary">Preregister</button>
+                        <button class="btn btn-primary"><a href="#preregister" class="text-white anchor-link">Preregister</a></button>
                     </div>
                 </div>
             </div>
@@ -434,6 +467,8 @@
                     </div>
                 </div>
             </section>
+
+            <div id="preregister" class="anchor"></div> 
 
             <section class="registration-section">
                 <div class="container">
@@ -489,10 +524,40 @@
                     </div>
                 </div>
             </section>
+
+            <footer class="bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 d-flex flex-column my-5">
+                            <p class="text-primary h6 mb-3 text-uppercase">When & Where</p>
+                            <p class="text-white">Boston Public Garden</p>
+                            <p class="text-white">August 5-8 2020</p>
+                            <p class="text-white">6.00PM - Midnight</p>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column my-5">
+                            <p class="text-primary h6 mb-3 text-uppercase">Follow Us</p>
+                            <div class="social-media-icons">
+                                <a href="www.twitter.com" class="text-white pr-3"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="www.instagram.com" class="text-white pr-3"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="www.facebook.com" class="text-white pr-3"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column my-5">
+                            <p class="text-primary h6 mb-3 text-uppercase">Interesting Boston Links</p>
+                            <div>
+                                <a href="https://www.bostonglobe.com/" class="d-block text-white">The Boston Globe</a>
+                                <a href="https://www.bostonherald.com/" class="d-block text-white">Boston Herald</a>
+                                <a href="https://www.boston.gov/parks/public-garden" class="d-block text-white">Boston Public Garden</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
         
         <script src="./js/jquery.min.js"></script>
         <script src="./js/popper.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
+        <script src="js/home.js"></script>
     </body>
 </html>
