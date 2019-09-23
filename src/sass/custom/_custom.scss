@@ -36,25 +36,39 @@ h1, h2, h3, h4, h5, h6 {
     position: inherit;
 }
 
-.w-30 {
-    width: 30%;
-}
-
 .height-fit-content {
     height: fit-content;
 }
 
 .anchor {
     position: relative;
-    top: -100px;
+    top: -97px;
 }
 
 .anchor#location {
-    top: 0px;
+    top: 10px;
 }
 
 .anchor#preregister {
-    top: -230px;
+    top: -220px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .anchor {
+        top: -337px;
+    }
+    .anchor#location {
+        top: -130px;
+    }
+    .anchor#preregister {
+        top: -475px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .anchor#location {
+        top: 175px;
+    }
 }
 
 // JUMBOTRON
@@ -64,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron-overlay {
-    background-color: rgba(49,41,53, 0.5);
+    background-color: scale-color($dark, $alpha: -50%);
 }
 
 .jumbotron-text-container {
@@ -78,11 +92,37 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+@media only screen and (max-width: 767.98px) {
+    .jumbotron-text-container {
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .jumbotron-text-container {
+        h1 {
+            font-size: 38px;
+        }
+        p.jumbotron-subtitle {
+            font-size: 18px;
+        }
+        .jumbotron-text-info {
+            display: block;
+            p, button {
+                font-size: 16px;
+                margin: 25px 15px;
+            }
+        }
+    }
+}
+
 .jumbotron-text-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 150px;
     position: relative;
     top: 120px;
     p, button {
@@ -101,30 +141,31 @@ h1, h2, h3, h4, h5, h6 {
 
 // NAVBAR
 .navbar {
-    padding: 0;
-    height: 100px;
-    a.navbar-brand {
-        padding: 0;
-    }
-    a.nav-link {
+    .navbar-nav .nav-link {
         color: $white;
         &:hover {
             color: $primary;
-        } 
-        &:active {
-            color: $primary;
         }
+    }
+    .navbar-nav .nav-link.active {
+        color: $primary;
     }
 }
 
 // ABOUT SECTION
 .about-section {
-    height: 500px;
+    min-height: 500px;
     background-color: $light;
     color: $dark;
     align-items: center;
     .social-media-icons {
         font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about-text-container {
+        width: 50% !important;
     }
 }
 
@@ -142,7 +183,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .movie-poster {
-    height: 350px;
+    max-height: 350px;
+    max-width: 100%;
 }
 
 .latest-news-section {
@@ -170,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
         background-position: right;
     }
     .line {
-        right: -50px;
+        right: 0px;
     }
     .google-maps {
         width: 100%;
@@ -180,9 +222,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .numbers-container {
     max-width: 960px;
-    height: 230px;
+    min-height: 230px;
     z-index: 1000;
     top: -115px;
+}
+
+@media only screen and (max-width: 768px) {
+    .numbers-container {
+        .border-right {
+            border-right: none !important;
+        }
+    }
 }
 
 .registration-section {
@@ -196,6 +246,9 @@ h1, h2, h3, h4, h5, h6 {
         z-index: -5;
         bottom: -10px;
         right: -20px;
+    }
+    button {
+        min-width: 150px;
     }
 }
 

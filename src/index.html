@@ -10,23 +10,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./public/css/main.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#main-navbar" data-offset="0">
         <div class="body-overlay">
             <section class="jumbotron p-0 vh-100 my-0" id="home">
                 <div class="jumbotron-overlay d-flex vh-100 w-100 text-white">
                     <div class="container-fluid fixed-top px-0">
-                        <nav class="navbar navbar-expand-lg bg-dark">
-                            <a class="navbar-brand ml-5" href="#home">
+                        <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-0" id="main-navbar">
+                            <a class="navbar-brand ml-sm-5 ml-2 p-0" href="#home">
                                 <img src="./public/img/logo.png" alt="WIO logo">
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler mr-sm-5 mr-2" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
 
-                            <div class="collapse navbar-collapse" id="mainNav">
+                            <div class="collapse navbar-collapse text-center" id="mainNav">
                                 <div class="mr-auto"></div>
-                                <ul class="navbar-nav mr-5">
-                                    <li class="nav-item active">
+                                <ul class="navbar-nav mr-lg-5 mr-0">
+                                    <li class="nav-item">
                                         <a class="nav-link anchor-link" href="#home">Home <span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
@@ -50,8 +50,8 @@
                     </div>
 
                     <div class="jumbotron-text-container mx-auto my-auto text-center">
-                        <h1>Celebrating our 2nd festival</h1>
-                        <p class="jumbotron-subtitle"><span class="line"></span>Watch It Outside Boston Edition</p>
+                        <h1>Our first Boston film festival</h1>
+                        <p class="jumbotron-subtitle"><span class="d-sm-inline-block d-none line"></span>Watch It Outside Events Co</p>
                         <div class="jumbotron-text-info">
                             <p>August 5 - 8 2020</p>
                             <p>Boston Public Garden</p>
@@ -64,7 +64,7 @@
             <div id="about" class="anchor"></div> 
 
             <section class="about-section container-fluid d-flex">
-                <div class="about-text-container text-center w-50 mx-auto">
+                <div class="about-text-container text-center w-75 mx-auto py-5">
                     <h2>About the festival <span class="line line-center"></span></h2>
                     <p>I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services. I’m a paragraph. Double click here or click Edit Text to add some text of your own or to change the font. This is the place for you to tell your site visitors a little bit about you and your services.</p>
                     <p></p>
@@ -81,11 +81,8 @@
 
             <section class="movies-section container pb-5">
                 <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="section-title section-heading">What's On</h2>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="section-subtitle section-heading"><span class="line"></span>Our Movies</p>
+                    <div class="col-md-12">
+                        <h2 class="section-title section-heading"><span class="line ml-4 mb-2 d-sm-inline-block d-none"></span>What's On</h2>
                     </div>
                 </div>
                 <div class="movies-list accordion" id="moviesAccordion">
@@ -101,48 +98,48 @@
 
                         <div class="collapse show" id="thursdayList" aria-labelledby="thursdayHeader" data-parent="#moviesAccordion">
                             <div class="card-body">
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/frozen-poster.jpg" alt="" class="movie-poster">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-md-5 pt-5 pb-0">
+                                        <img src="./public/img/frozen-poster.jpg" alt="Frozen poster" class="movie-poster">
                                     </div>
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-5">
                                         <h3 class="mb-5">Frozen</h3>
                                         <p class="mb-5">When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Thursday 5th of August 6PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-md-5 pt-5 pb-0">
                                         <h3 class="mb-5">Jurassic Park</h3>
                                         <p class="mb-5">During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Thursday 5th of August 6.30PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 2</p>
                                     </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/jurassic-park-poster.jpg" alt="" class="movie-poster">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-5">
+                                        <img src="./public/img/jurassic-park-poster.jpg" alt="Jusrassic Park poster" class="movie-poster">
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/spiderman-poster.jpg" alt="" class="movie-poster">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-md-5 pt-5 pb-0">
+                                        <img src="./public/img/spiderman-poster.jpg" alt="The Amazing Spiderman poster" class="movie-poster">
                                     </div>
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-5">
                                         <h3 class="mb-5">The Amazing Spider-Man</h3>
                                         <p class="mb-5">After Peter Parker is bitten by a genetically altered spider, he gains newfound, spider-like powers and ventures out to solve the mystery of his parent's mysterious death.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Thursday 5th of August 8.30PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="row py-3">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-md-5 pt-5 pb-0">
                                         <h3 class="mb-5">The Talented Mr. Ripley</h3>
                                         <p class="mb-5">In late 1950s New York, Tom Ripley, a young underachiever, is sent to Italy to retrieve Dickie Greenleaf, a rich and spoiled millionaire playboy. But when the errand fails, Ripley takes extreme measures.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Thursday 5th of August 9.30PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 2</p>
                                     </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/mrripley-poster.jpg" alt="" class="movie-poster">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-5">
+                                        <img src="./public/img/mrripley-poster.jpg" alt="The Talented Mr. Ripley poster" class="movie-poster">
                                     </div>
                                 </div>
                             </div>
@@ -160,48 +157,48 @@
 
                         <div class="collapse" id="fridayList" aria-labelledby="fridayHeader" data-parent="#moviesAccordion">
                             <div class="card-body">
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/lion-king-poster.jpg" alt="" class="movie-poster">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-md-5 pt-5 pb-0">
+                                        <img src="./public/img/lion-king-poster.jpg" alt="The Lion King poster" class="movie-poster">
                                     </div>
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-5">
                                         <h3 class="mb-5">The Lion King</h3>
                                         <p class="mb-5">To survive and grow into a powerful adult lion, Simba must perfect his savage pounce and master fighting with all four paws. Scrap with hyenas, dash through an elephant grave-yard, defeat your evil uncle Scar and recapture the Pridelands.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Friday 6th of August 6.30PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-md-5 pt-5 pb-0">
                                         <h3 class="mb-5">Grease</h3>
                                         <p class="mb-5">Good girl Sandy and greaser Danny fell in love over the summer. When they unexpectedly discover they're now in the same high school, will they be able to rekindle their romance?</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Friday 6th of August 7.15PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 2</p>
                                     </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/grease-poster.jpg" alt="" class="movie-poster">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-5">
+                                        <img src="./public/img/grease-poster.jpg" alt="Grease poster" class="movie-poster">
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/equals-poster.jpg" alt="" class="movie-poster">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-md-5 pt-5 pb-0">
+                                        <img src="./public/img/equals-poster.jpg" alt="Equals poster" class="movie-poster">
                                     </div>
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-5">
                                         <h3 class="mb-5">Equals</h3>
                                         <p class="mb-5">In an emotionless utopia, two people fall in love when they regain their feelings from a mysterious disease, causing tensions between them and their society.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Friday 6th of August 9.00PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="row py-3">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-md-5 pt-5 pb-0">
                                         <h3 class="mb-5">Casablanca</h3>
                                         <p class="mb-5">A cynical American expatriate struggles to decide whether or not he should help his former lover and her fugitive husband escape French Morocco.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Friday 6th of August 10PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 2</p>
                                     </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/casablanca-poster.jpg" alt="" class="movie-poster">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-5">
+                                        <img src="./public/img/casablanca-poster.jpg" alt="Casablanca poster" class="movie-poster">
                                     </div>
                                 </div>
                             </div>
@@ -219,48 +216,48 @@
 
                         <div class="collapse" id="saturdayList" aria-labelledby="saturdayHeader" data-parent="#moviesAccordion">
                             <div class="card-body">
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/princess-frog-poster.jpg" alt="" class="movie-poster">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-md-5 pt-5 pb-0">
+                                        <img src="./public/img/princess-frog-poster.jpg" alt="The Princess and the Frog poster" class="movie-poster">
                                     </div>
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-5">
                                         <h3 class="mb-5">The Princess and the Frog</h3>
                                         <p class="mb-5">A waitress, desperate to fulfill her dreams as a restaurant owner, is set on a journey to turn a frog prince back into a human being, but she has to face the same problem after she kisses him.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Saturday 7th of August 6.00PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-md-5 pt-5 pb-0">
                                         <h3 class="mb-5">Back to the Future</h3>
                                         <p class="mb-5">Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Saturday 7th of August 7.00PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 2</p>
                                     </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/back-to-the-future-poster.jpg" alt="" class="movie-poster">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-5">
+                                        <img src="./public/img/back-to-the-future-poster.jpg" alt="Back to the Future poster" class="movie-poster">
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/green-lantern-poster.jpg" alt="" class="movie-poster">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-md-5 pt-5 pb-0">
+                                        <img src="./public/img/green-lantern-poster.jpg" alt="Green Lantern poster" class="movie-poster">
                                     </div>
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-5">
                                         <h3 class="mb-5">Green Lantern</h3>
                                         <p class="mb-5">Reckless test pilot Hal Jordan is granted an alien ring that bestows him with otherworldly powers that inducts him into an intergalactic police force, the Green Lantern Corps.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Saturday 7th of August 9.00PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="row py-3">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-md-5 pt-5 pb-0">
                                         <h3 class="mb-5">Cinema Paradiso</h3>
                                         <p class="mb-5">A filmmaker recalls his childhood when falling in love with the pictures at the cinema of his home village and forms a deep friendship with the cinema's projectionist.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Saturday 7th of August 10PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 2</p>
                                     </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/cinema-paradiso-poster.jpg" alt="" class="movie-poster">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-5">
+                                        <img src="./public/img/cinema-paradiso-poster.jpg" alt="Cinema Paradiso poster" class="movie-poster">
                                     </div>
                                 </div>
                             </div>
@@ -278,48 +275,48 @@
 
                         <div class="collapse" id="sundayList" aria-labelledby="sundayHeader" data-parent="#moviesAccordion">
                             <div class="card-body">
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/walle-poster.jpg" alt="" class="movie-poster">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-md-5 pt-5 pb-0">
+                                        <img src="./public/img/walle-poster.jpg" alt="WALL.E poster" class="movie-poster">
                                     </div>
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-5">
                                         <h3 class="mb-5">WALL·E</h3>
                                         <p class="mb-5">In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Sunday 8th of August 6.00PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-md-5 pt-5 pb-0">
                                         <h3 class="mb-5">Alice in Wonderland</h3>
                                         <p class="mb-5">MNineteen-year-old Alice returns to the magical world from her childhood adventure, where she reunites with her old friends and learns of her true destiny: to end the Red Queen's reign of terror.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Sunday 8th of August 6.30PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 2</p>
                                     </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/alice-wonderland-poster.jpg" alt="" class="movie-poster">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-5">
+                                        <img src="./public/img/alice-wonderland-poster.jpg" alt="Alice in Wonderland poster" class="movie-poster">
                                     </div>
                                 </div>
-                                <div class="row border-bottom border-light">
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/good-will-hunting-poster.jpg" alt="" class="movie-poster">
+                                <div class="row border-bottom border-light py-3">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-md-5 pt-5 pb-0">
+                                        <img src="./public/img/good-will-hunting-poster.jpg" alt="Good Will Hunting poster" class="movie-poster">
                                     </div>
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-5">
                                         <h3 class="mb-5">Good Will Hunting</h3>
                                         <p class="mb-5">Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Sunday 8th of August 9.30PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 1</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-7 d-flex flex-column justify-content-center">
+                                <div class="row py-3">
+                                    <div class="col-md-7 col-12 d-flex flex-column justify-content-center py-md-5 pt-5 pb-0">
                                         <h3 class="mb-5">Intouchables</h3>
                                         <p class="mb-5">After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.</p>
                                         <p class="text-uppercase text-primary font-weight-bold mb-0">Sunday 8th of August 9.30PM </p>
                                         <p class="text-uppercase font-weight-bold">Screen 2</p>
                                     </div>
-                                    <div class="col-md-5 text-center">
-                                        <img src="./public/img/intouchables-poster.jpg" alt="" class="movie-poster">
+                                    <div class="col-md-5 col-12 text-md-center text-left py-5">
+                                        <img src="./public/img/intouchables-poster.jpg" alt="Intouchables poster" class="movie-poster">
                                     </div>
                                 </div>
                             </div>
@@ -331,85 +328,94 @@
 
             <div id="news" class="anchor"></div> 
 
-            <section class="latest-news-section container-fluid">
+            <section class="latest-news-section container-fluid px-0">
                 <div class="latest-news-overlay">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h2 class="section-title section-heading">Latest News</h2>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="section-subtitle section-heading"><span class="line"></span>Festival News & Announcements</p>
+                            <div class="col-md-12">
+                                <h2 class="section-title section-heading"><span class="line ml-4 mb-2 d-sm-inline-block d-none"></span>Festival News</h2>
                             </div>
                         </div>
 
                         <div class="card-container row justify-content-center">
-                            <div class="card w-30 mr-4 mb-5">
-                                <img class="card-img-top" src="http://loremflickr.com/350/175/film,festival" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Film festival news</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newsModal1">Read more</a>
+                            <div class="col-md-6 col-xl-4 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://loremflickr.com/350/175/film,festival" alt="Film festival news image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Film festival news</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newsModal1">Read more</a>
 
-                                    <div class="modal fade" id="newsModal1" tabindex="-1" role="dialog" aria-labelledby="newsModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="newsModalLabel">Film Festival News</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments thoroughly unsatiable terminated sex how themselves. She are ten hours wrong walls stand early. Domestic perceive on an ladyship extended received do. Why jennings our whatever his learning gay perceive. Is against no he without subject. Bed connection unreserved preference partiality not unaffected. Years merit trees so think in hoped we as. </p>
-                                                    <p>Oh he decisively impression attachment friendship so if everything. Whose her enjoy chief new young. Felicity if ye required likewise so doubtful. On so attention necessary at by provision otherwise existence direction. Unpleasing up announcing unpleasant themselves oh do on. Way advantage age led listening belonging supposing.</p>
-                                                    <img class="float-left pr-3" src="http://loremflickr.com/350/175/film,festival" alt="">
-                                                    <p>He an thing rapid these after going drawn or. Timed she his law the spoil round defer. In surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing. He as spoke avoid given downs money on we. Of properly carriage shutters ye as wandered up repeated moreover. Inquietude attachment if ye an solicitude to. Remaining so continued concealed as knowledge happiness. Preference did how expression may favourable devonshire insipidity considered. An length design regret an hardly barton mr figure. </p>
+                                        <div class="modal fade" id="newsModal1" tabindex="-1" role="dialog" aria-labelledby="newsModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="newsModalLabel">Film Festival News</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Not him old music think his found enjoy merry. Listening acuteness dependent at or an. Apartments thoroughly unsatiable terminated sex how themselves. She are ten hours wrong walls stand early. Domestic perceive on an ladyship extended received do. Why jennings our whatever his learning gay perceive. Is against no he without subject. Bed connection unreserved preference partiality not unaffected. Years merit trees so think in hoped we as. </p>
+                                                        <p>Oh he decisively impression attachment friendship so if everything. Whose her enjoy chief new young. Felicity if ye required likewise so doubtful. On so attention necessary at by provision otherwise existence direction. Unpleasing up announcing unpleasant themselves oh do on. Way advantage age led listening belonging supposing.</p>
+                                                        <img class="float-left pb-3 w-100" src="http://loremflickr.com/350/175/film,festival" alt="">
+                                                        <p>He an thing rapid these after going drawn or. Timed she his law the spoil round defer. In surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing. He as spoke avoid given downs money on we. Of properly carriage shutters ye as wandered up repeated moreover. Inquietude attachment if ye an solicitude to. Remaining so continued concealed as knowledge happiness. Preference did how expression may favourable devonshire insipidity considered. An length design regret an hardly barton mr figure. </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card w-30 mr-4 mb-5">
-                                <img class="card-img-top" src="http://loremflickr.com/350/175/boston,event" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Boston events</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Read more</a>
+                            <div class="col-md-6 col-xl-4 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://loremflickr.com/350/175/boston,event" alt="Boston events news image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Boston events</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Read more</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card w-30 mr-4 mb-5">
-                                <img class="card-img-top" src="http://loremflickr.com/350/175/cinema" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cinema news</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Read more</a>
+                            <div class="col-md-6 col-xl-4 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://loremflickr.com/350/175/cinema" alt="Cinema news image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cinema news</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Read more</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card w-30 mr-4 mb-4">
-                                <img class="card-img-top" src="http://loremflickr.com/350/175/outdoor,cinema" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Outdoor cinemas</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
-                                    <a href="#" class="btn btn-primary">Read more</a>
+                            <div class="col-md-6 col-xl-4 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://loremflickr.com/350/175/outdoor,cinema" alt="Outdoor cinemas image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Outdoor cinemas</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                                        <a href="#" class="btn btn-primary">Read more</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card w-30 mr-4 mb-4">
-                                <img class="card-img-top" src="http://loremflickr.com/350/175/weather,boston,summer" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Weather information</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Read more</a>
+                            <div class="col-md-6 col-xl-4 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://loremflickr.com/350/175/weather,boston,summer" alt="Weather image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Weather information</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Read more</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card w-30 mr-4 mb-4">
-                                <img class="card-img-top" src="http://loremflickr.com/350/175/film" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Other news</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Read more</a>
+                            <div class="col-md-6 col-xl-4 mb-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://loremflickr.com/350/175/film" alt="Other news image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Other news</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -419,21 +425,21 @@
 
             <div id="location" class="anchor"></div> 
 
-            <div class="numbers-section container numbers-container bg-white position-relative">
-                <div class="row align-items-center h-100">
-                    <div class="col-md-3 height-fit-content text-center border-right">
+            <div class="numbers-section container numbers-container bg-white position-relative d-flex flex-column justify-content-center">
+                <div class="row align-items-center h-100 w-100">
+                    <div class="col-md-3 col-sm-6 height-fit-content text-center border-right py-3">
                         <p class="h3 display-3">04</p>
                         <p class="h5 text-primary text-uppercase">days</p>
                     </div>
-                    <div class="col-md-3 height-fit-content text-center border-right">
+                    <div class="col-md-3 col-sm-6 height-fit-content text-center border-right py-3">
                         <p class="h3 display-3">02</p>
                         <p class="h5 text-primary text-uppercase">screens</p>
                     </div>
-                    <div class="col-md-3 height-fit-content text-center border-right">
+                    <div class="col-md-3 col-sm-6 height-fit-content text-center border-right py-3">
                         <p class="h3 display-3">16</p>
                         <p class="h5 text-primary text-uppercase">movies</p>
                     </div>
-                    <div class="col-md-3 height-fit-content text-center">
+                    <div class="col-md-3 col-sm-6 height-fit-content text-center py-3">
                         <button class="btn btn-primary"><a href="#preregister" class="text-white anchor-link">Preregister</a></button>
                     </div>
                 </div>
@@ -442,25 +448,25 @@
             <section class="location-section position-relative">
                 <div class="container-fluid bg-light">
                     <div class="row location-row">
-                        <div class="col-md-6 px-0 bpg-img">
+                        <div class="col-md-6 px-0 bpg-img d-md-block d-none">
                         </div>
-                        <div class="col-md-6 text-dark">
+                        <div class="col-md-6 col-12 text-dark">
                             <div class="location-text-container w-100 d-flex flex-column justify-content-center align-items-center">
-                                <div class="location-text text-center">
+                                <div class="location-text">
                                     <h2 class="mt-5 mb-3">Boston Public Garden</h2>
-                                    <div class="row text-center">
-                                        <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-4">
                                             <p class="text-right"><span class="line"></span></p>
                                         </div>
-                                        <div class="col-md-6">
-                                            <address class="text-uppercase">
+                                        <div class="col-6">
+                                            <address class="text-uppercase text-left">
                                                 4 Charles Street<br>
                                                 Boston, MA 02116
                                             </address>
                                         </div>
                                     </div>
                                     <img src="./public/img/bpg-google-maps-sat.png" alt="Google maps with location of screens" class="google-maps">
-                                    <button class="mb-5 mt-3 btn btn-primary d-block">Visit Site</button>
+                                    <button class="mb-5 mt-3 btn btn-primary d-block"><a href="https://www.boston.gov/parks/public-garden" class="text-white">Visit Site</a></button>
                                 </div>
                             </div>
                         </div>
@@ -474,13 +480,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 text-white">
-                            <h2 class="text-uppercase mb-4"><span class="line ml-4 mb-1"></span>Preregister</h2>
+                            <h2 class="text-uppercase mb-4"><span class="line ml-4 mb-2 d-sm-inline-block d-none"></span>Preregister</h2>
                             <p class="pr-0">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-11">
-                            <div class="form-underlay"></div>
+                        <div class="col-md-11 col-12">
+                            <div class="form-underlay d-md-block d-none"></div>
                             <form class=" my-4 bg-dark p-5 border-left-0 border-white">
                                 <div class="form-row">
                                     <div class="form-group col-md-6 mb-4">
@@ -528,13 +534,13 @@
             <footer class="bg-dark">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 d-flex flex-column my-5">
+                        <div class="col-sm-4 col-12 d-flex flex-column my-5 text-center text-sm-left">
                             <p class="text-primary h6 mb-3 text-uppercase">When & Where</p>
                             <p class="text-white">Boston Public Garden</p>
                             <p class="text-white">August 5-8 2020</p>
                             <p class="text-white">6.00PM - Midnight</p>
                         </div>
-                        <div class="col-md-4 d-flex flex-column my-5">
+                        <div class="col-sm-4 col-12 d-flex flex-column my-5 text-center text-sm-left">
                             <p class="text-primary h6 mb-3 text-uppercase">Follow Us</p>
                             <div class="social-media-icons">
                                 <a href="www.twitter.com" class="text-white pr-3"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -542,7 +548,7 @@
                                 <a href="www.facebook.com" class="text-white pr-3"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex flex-column my-5">
+                        <div class="col-sm-4 col-12 d-flex flex-column my-5 text-center text-sm-left">
                             <p class="text-primary h6 mb-3 text-uppercase">Interesting Boston Links</p>
                             <div>
                                 <a href="https://www.bostonglobe.com/" class="d-block text-white">The Boston Globe</a>
