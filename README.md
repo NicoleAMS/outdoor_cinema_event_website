@@ -18,4 +18,4 @@ The technologies I used were:
 * Font Awesome 4
 * Google Fonts 
 
-The use of Bootstrap 4 was one of the project's requirements. I also wanted to use SCSS and learn how to use and set up Gulp with both Bootstrap and SCSS.  
+The use of Bootstrap 4 was one of the project's requirements. I also wanted to use SCSS and learn how to use and set up Gulp with SCSS and browserSync. 
