@@ -5,7 +5,7 @@ OpenClassrooms Front-End Developer path project: 'Analyze a client's needs for t
 ## Introduction
 This webpage is a mockup for an imaginary outdoor film festival, which I designed and developed based on a brief with specific requirements. I also wrote a project outline brief for the imaginary client with sections that describe the stakeholders, goals, budget, timeline and technical specifications.
 
-The brief with requirements can be found in the project-requirements folder and my own project outline brief can both be found in the documentation folder above. 
+Both brief with requirments and the project brief can be found in the documents folder above. 
 
 To see the result, visit: https://nicoleams.github.io/outdoor_cinema_event_website/src/index.html
 
